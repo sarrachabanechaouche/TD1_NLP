@@ -5,9 +5,9 @@ import joblib
 
 def predict(input_filename: str, model_dump_filename: str, output_filename: str):
     
-    #- Charge le pipeline (model + vectorizer).
-    #- Lit input_filename (CSV) qui doit avoir 'video_name'.
-    #- Fait la prédiction.
+    #- Charger le pipeline (model + vectorizer).
+    #- Lire input_filename (CSV) qui doit avoir 'video_name'.
+    #- Faire la prédiction.
     
     # Charger le pipeline
     pipeline = joblib.load(model_dump_filename)
